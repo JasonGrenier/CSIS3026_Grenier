@@ -1,0 +1,78 @@
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "5TK-5G-RbE"; */
+"5TK-5G-RbE.title" = "Settings";
+
+/* Class = "UIImageView"; accessibilityHint = "Cupload Logo"; ObjectID = "75i-gi-JXb"; */
+"75i-gi-JXb.accessibilityHint" = "Cupload Logo";
+
+/* Class = "UIImageView"; accessibilityLabel = "Cupload Logo"; ObjectID = "75i-gi-JXb"; */
+"75i-gi-JXb.accessibilityLabel" = "Cupload Logo";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "7n1-Ja-P3l"; */
+"7n1-Ja-P3l.placeholder" = "Email";
+
+/* Class = "UIButton"; configuration.title = "Signup"; ObjectID = "A1V-Ag-Y2e"; */
+"A1V-Ag-Y2e.configuration.title" = "Signup";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "A1V-Ag-Y2e"; */
+"A1V-Ag-Y2e.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "BuY-uh-wZQ"; */
+"BuY-uh-wZQ.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "First name"; ObjectID = "CcF-uX-ryb"; */
+"CcF-uX-ryb.placeholder" = "First name";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "CcG-k2-RBn"; */
+"CcG-k2-RBn.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "DoV-WK-erD"; */
+"DoV-WK-erD.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DoV-WK-erD"; */
+"DoV-WK-erD.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "F32-sR-grO"; */
+"F32-sR-grO.placeholder" = "Username";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "HXP-B3-eAU"; */
+"HXP-B3-eAU.placeholder" = "Username";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "LfA-IX-euO"; */
+"LfA-IX-euO.placeholder" = "Password";
+
+/* Class = "UITextView"; text = "Welcome to the party"; ObjectID = "NLF-2d-pse"; */
+"NLF-2d-pse.text" = "Welcome to the party";
+
+/* Class = "UITabBarItem"; title = "Contacts"; ObjectID = "Y7V-qo-PMC"; */
+"Y7V-qo-PMC.title" = "Contacts";
+
+/* Class = "UILabel"; text = "Cupload"; ObjectID = "dHg-gk-Y6A"; */
+"dHg-gk-Y6A.text" = "Cupload";
+
+/* Class = "UIButton"; configuration.title = "Drink up"; ObjectID = "g6q-Ak-W5T"; */
+"g6q-Ak-W5T.configuration.title" = "Drink up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "g6q-Ak-W5T"; */
+"g6q-Ak-W5T.normalTitle" = "Button";
+
+/* Class = "UIImageView"; accessibilityHint = "Cupload Logo"; ObjectID = "goF-KP-Xv3"; */
+"goF-KP-Xv3.accessibilityHint" = "Cupload Logo";
+
+/* Class = "UIImageView"; accessibilityLabel = "Cupload Logo"; ObjectID = "goF-KP-Xv3"; */
+"goF-KP-Xv3.accessibilityLabel" = "Cupload Logo";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "hYU-Y1-5op"; */
+"hYU-Y1-5op.title" = "Home";
+
+/* Class = "UILabel"; text = "Cupload"; ObjectID = "sAu-fo-luU"; */
+"sAu-fo-luU.text" = "Cupload";
+
+/* Class = "UITextView"; text = "Welcome to the party"; ObjectID = "sbz-Du-ATh"; */
+"sbz-Du-ATh.text" = "Welcome to the party";
+
+/* Class = "UITabBarItem"; title = "Blow"; ObjectID = "tcd-zC-NSX"; */
+"tcd-zC-NSX.title" = "Blow";
+
+/* Class = "UITextField"; placeholder = "Last name"; ObjectID = "wAr-rG-yqI"; */
+"wAr-rG-yqI.placeholder" = "Last name";
