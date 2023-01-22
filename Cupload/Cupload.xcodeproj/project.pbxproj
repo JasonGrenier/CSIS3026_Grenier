@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C63C9037297C87AB004275BC /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = C63C9036297C87AB004275BC /* Algorithms */; };
+		C63C903A297C8895004275BC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C63C9039297C8895004275BC /* Alamofire */; };
 		C6B19A3029799B9400195FCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A2F29799B9400195FCA /* AppDelegate.swift */; };
 		C6B19A3229799B9400195FCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A3129799B9400195FCA /* SceneDelegate.swift */; };
-		C6B19A3429799B9400195FCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A3329799B9400195FCA /* ViewController.swift */; };
+		C6B19A3429799B9400195FCA /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A3329799B9400195FCA /* Base.swift */; };
 		C6B19A3729799B9400195FCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B19A3529799B9400195FCA /* Main.storyboard */; };
 		C6B19A3929799B9600195FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6B19A3829799B9600195FCA /* Assets.xcassets */; };
 		C6B19A3C29799B9600195FCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B19A3A29799B9600195FCA /* LaunchScreen.storyboard */; };
@@ -39,7 +41,7 @@
 		C6B19A2C29799B9400195FCA /* Cupload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cupload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B19A2F29799B9400195FCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6B19A3129799B9400195FCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C6B19A3329799B9400195FCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6B19A3329799B9400195FCA /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		C6B19A3629799B9400195FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6B19A3829799B9600195FCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6B19A3B29799B9600195FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C63C9037297C87AB004275BC /* Algorithms in Frameworks */,
+				C63C903A297C8895004275BC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +105,7 @@
 			children = (
 				C6B19A2F29799B9400195FCA /* AppDelegate.swift */,
 				C6B19A3129799B9400195FCA /* SceneDelegate.swift */,
-				C6B19A3329799B9400195FCA /* ViewController.swift */,
+				C6B19A3329799B9400195FCA /* Base.swift */,
 				C6B19A3529799B9400195FCA /* Main.storyboard */,
 				C6B19A3829799B9600195FCA /* Assets.xcassets */,
 				C6B19A3A29799B9600195FCA /* LaunchScreen.storyboard */,
@@ -143,6 +147,10 @@
 			dependencies = (
 			);
 			name = Cupload;
+			packageProductDependencies = (
+				C63C9036297C87AB004275BC /* Algorithms */,
+				C63C9039297C8895004275BC /* Alamofire */,
+			);
 			productName = Cupload;
 			productReference = C6B19A2C29799B9400195FCA /* Cupload.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,10 @@
 				Base,
 			);
 			mainGroup = C6B19A2329799B9400195FCA;
+			packageReferences = (
+				C63C9035297C87AB004275BC /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				C63C9038297C8895004275BC /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C6B19A2D29799B9400195FCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6B19A3429799B9400195FCA /* ViewController.swift in Sources */,
+				C6B19A3429799B9400195FCA /* Base.swift in Sources */,
 				C6B19A3029799B9400195FCA /* AppDelegate.swift in Sources */,
 				C6B19A3229799B9400195FCA /* SceneDelegate.swift in Sources */,
 			);
@@ -596,6 +608,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C63C9035297C87AB004275BC /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		C63C9038297C8895004275BC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C63C9036297C87AB004275BC /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C63C9035297C87AB004275BC /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		C63C9039297C8895004275BC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C63C9038297C8895004275BC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C6B19A2429799B9400195FCA /* Project object */;
 }
