@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C63C9037297C87AB004275BC /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = C63C9036297C87AB004275BC /* Algorithms */; };
 		C63C903A297C8895004275BC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C63C9039297C8895004275BC /* Alamofire */; };
+		C681E03E297E7C0600D35DBD /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681E03D297E7C0600D35DBD /* HomeTabViewController.swift */; };
 		C6A1E948297D133800084111 /* ViewControllerRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E947297D133800084111 /* ViewControllerRegister.swift */; };
 		C6B19A3029799B9400195FCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A2F29799B9400195FCA /* AppDelegate.swift */; };
 		C6B19A3229799B9400195FCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A3129799B9400195FCA /* SceneDelegate.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C681E03D297E7C0600D35DBD /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		C6A1E947297D133800084111 /* ViewControllerRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRegister.swift; sourceTree = "<group>"; };
 		C6B19A2C29799B9400195FCA /* Cupload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cupload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B19A2F29799B9400195FCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,9 +84,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C681E03F297F41C200D35DBD /* Imgs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Imgs;
+			sourceTree = "<group>";
+		};
 		C6B19A2329799B9400195FCA = {
 			isa = PBXGroup;
 			children = (
+				C681E03F297F41C200D35DBD /* Imgs */,
 				C6B19A2E29799B9400195FCA /* Cupload */,
 				C6B19A4529799B9600195FCA /* CuploadTests */,
 				C6B19A4F29799B9600195FCA /* CuploadUITests */,
@@ -113,6 +123,7 @@
 				C6B19A3829799B9600195FCA /* Assets.xcassets */,
 				C6B19A3D29799B9600195FCA /* Info.plist */,
 				C6A1E947297D133800084111 /* ViewControllerRegister.swift */,
+				C681E03D297E7C0600D35DBD /* HomeTabViewController.swift */,
 			);
 			path = Cupload;
 			sourceTree = "<group>";
@@ -277,6 +288,7 @@
 				C6B19A3429799B9400195FCA /* ViewControllerLogin.swift in Sources */,
 				C6B19A3029799B9400195FCA /* AppDelegate.swift in Sources */,
 				C6B19A3229799B9400195FCA /* SceneDelegate.swift in Sources */,
+				C681E03E297E7C0600D35DBD /* HomeTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
