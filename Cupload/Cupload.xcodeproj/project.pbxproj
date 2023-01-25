@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C607C67A298086F300A4CACD /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C607C679298086F300A4CACD /* HomeTabViewController.swift */; };
 		C63C9037297C87AB004275BC /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = C63C9036297C87AB004275BC /* Algorithms */; };
 		C63C903A297C8895004275BC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C63C9039297C8895004275BC /* Alamofire */; };
-		C681E03E297E7C0600D35DBD /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681E03D297E7C0600D35DBD /* HomeTabViewController.swift */; };
 		C6A1E948297D133800084111 /* ViewControllerRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E947297D133800084111 /* ViewControllerRegister.swift */; };
 		C6B19A3029799B9400195FCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A2F29799B9400195FCA /* AppDelegate.swift */; };
 		C6B19A3229799B9400195FCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A3129799B9400195FCA /* SceneDelegate.swift */; };
@@ -40,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C681E03D297E7C0600D35DBD /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		C607C679298086F300A4CACD /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		C6A1E947297D133800084111 /* ViewControllerRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRegister.swift; sourceTree = "<group>"; };
 		C6B19A2C29799B9400195FCA /* Cupload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cupload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B19A2F29799B9400195FCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 				C6B19A3829799B9600195FCA /* Assets.xcassets */,
 				C6B19A3D29799B9600195FCA /* Info.plist */,
 				C6A1E947297D133800084111 /* ViewControllerRegister.swift */,
-				C681E03D297E7C0600D35DBD /* HomeTabViewController.swift */,
+				C607C679298086F300A4CACD /* HomeTabViewController.swift */,
 			);
 			path = Cupload;
 			sourceTree = "<group>";
@@ -288,7 +288,7 @@
 				C6B19A3429799B9400195FCA /* ViewControllerLogin.swift in Sources */,
 				C6B19A3029799B9400195FCA /* AppDelegate.swift in Sources */,
 				C6B19A3229799B9400195FCA /* SceneDelegate.swift in Sources */,
-				C681E03E297E7C0600D35DBD /* HomeTabViewController.swift in Sources */,
+				C607C67A298086F300A4CACD /* HomeTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

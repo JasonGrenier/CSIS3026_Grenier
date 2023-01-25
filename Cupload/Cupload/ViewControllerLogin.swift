@@ -5,7 +5,6 @@
 //  Created by Jason Grenier on 1/19/23.
 //
 
-import Alamofire
 import UIKit
 
 extension ViewControllerLogin {
@@ -22,18 +21,59 @@ extension ViewControllerLogin {
     // Dismiss the active keyboard.
     view.endEditing(true)
     }
+    // This collects the data that needs to be stored locally, and is passed to the Main Tab View Controller
+    func collectUserData(){
+        // Data must be read in from the main thread
+        DispatchQueue.main.async {
+            let URL_COLLECT_USER_DATA = "http://localhost:8888/CuploadServer/cupload_send_user_data_process.php?username=" + self.usernameInputBase.text!;
+            var request = URLRequest(url: URL(string: URL_COLLECT_USER_DATA)!)
+            request.httpMethod = "POST"
+            //request.httpBody = try? JSONSerialization.data(withJSONObject: userInput, options: [])
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            //print(request);
+            let session = URLSession.shared
+            DispatchQueue.main.async {
+                let task = session.dataTask(with: request, completionHandler: { [self] data, response, error -> Void in
+                    do {
+                        let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
+                        print(json)
+                        // Enable pop up if user data is not validated
+                        if(json["errorCode"]) as! Int == 1{
+                            DispatchQueue.main.async{
+                                self.showErrorDialog(errorMessage: json["errorMessage"] as! String)
+                            }
+                            
+                        } else {
+                            
+                            // ID
+                            UserDefaults.standard.set(json["id"], forKey: "ID")
+                            // Username
+                            UserDefaults.standard.set(json["user_name"], forKey: "username")
+                            // Firstname
+                            //print(json["firstName"])
+                            UserDefaults.standard.set(json["first_name"], forKey: "firstName")
+                            // Lastname
+                            UserDefaults.standard.set(json["last_name"], forKey: "lastName")
+                            // Phone number
+                            UserDefaults.standard.set(json["phone_number"], forKey: "phoneNumber")
+                            // Token
+                        }
+                    } catch {
+                        print("error")
+                    }
+                })
+                task.resume()
+            }
+        }
+        
+    }
 
 }
 
 
 class ViewControllerLogin: UIViewController {
     // Initialization of storyboard elements
-    let URL_LOGIN = "http://192.168.0.45:8888/CuploadServer/cupload_login_process.php"
-    
-    @IBOutlet weak var usernameInputBase: UITextField!
-    @IBOutlet weak var passwordInputBase: UITextField!
-    var homePageValidity = 0;
-    
+    let URL_LOGIN = "http://localhost:8888/CuploadServer/cupload_login_process.php"
     
     func showErrorDialog(errorMessage: String) {
             //Creating UIAlertController and
@@ -54,7 +94,13 @@ class ViewControllerLogin: UIViewController {
             
         }
     
-    @IBAction func loginButtonBase(_ sender: UIButton) {
+    
+    @IBOutlet weak var usernameInputBase: UITextField!
+    
+    @IBOutlet weak var passwordInputBase: UITextField!
+    
+    
+    @IBAction func loginButtonBase(_ sender: Any) {
         print("Login Button was pressed")
         // Client side validation
         if(usernameInputBase.text!.count < 4 || passwordInputBase.text!.count < 4){
@@ -76,17 +122,29 @@ class ViewControllerLogin: UIViewController {
             request.httpMethod = "POST"
             //request.httpBody = try? JSONSerialization.data(withJSONObject: userInput, options: [])
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-            //print(request);
+                print(request);
             let session = URLSession.shared
             DispatchQueue.main.async {
                 let task = session.dataTask(with: request, completionHandler: { [self] data, response, error -> Void in
-                    print(response ?? "RESPONSE ERROR")
                     do {
                         let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
                         // Enable pop up if user data is not validated
                         if(json["errorCode"]) as! Int == 1{
-                            showErrorDialog(errorMessage: json["errorMessage"] as! String)
-                            homePageValidity = 1;
+                            DispatchQueue.main.async{
+                                self.showErrorDialog(errorMessage: json["errorMessage"] as! String)
+                            }
+                            
+                        } else {
+                            // Establish user information
+                            collectUserData()
+                            // Show Home Tab View Controller
+                            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                            DispatchQueue.main.async{
+                                // User defualts are used for storing data locally
+                                UserDefaults.standard.set(self.usernameInputBase.text, forKey: "username")
+                                let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabViewController")
+                                (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
+                            }
                         }
                     } catch {
                         print("error")
@@ -94,20 +152,18 @@ class ViewControllerLogin: UIViewController {
                 })
                 task.resume()
             }
-            if(homePageValidity == 1){
-                DispatchQueue.main.async{
-                    self.showErrorDialog(errorMessage: "User is now logged in.")
-                }
-                
-            }
         
         }
-        
     }
+    
     @IBAction func signupButtonBase(_ sender: UIButton) {
         // Changes view to RegisterScreen via Storyboard
         print("Signup button was pressed")
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewControllerRegister = storyboard.instantiateViewController(identifier: "ViewControllerRegister")
+        DispatchQueue.main.async{
+            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(viewControllerRegister)
+        }
     }
     
     override func viewDidLoad() {

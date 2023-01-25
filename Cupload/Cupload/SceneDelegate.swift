@@ -10,11 +10,6 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    // For users logged in, store this data
-    var token: Int?
-    var name: String?
-    var lastName: String?
-    var userName: String?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -63,6 +58,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //Save token
         
         //Would we disconnect from database here?? Would token still be valid upon re-entry?
+    }
+    
+    func changeRootViewController(_ vc: UIViewController, animated: Bool = true) {
+        guard let window = self.window else {
+            return
+        }
+        
+        // change the root view controller to your specific view controller
+        DispatchQueue.main.async{
+            window.rootViewController = vc
+        }
+        
+        
     }
 
 

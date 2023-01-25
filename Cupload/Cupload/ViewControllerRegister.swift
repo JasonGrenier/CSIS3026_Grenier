@@ -5,7 +5,6 @@
 //  Created by Jason Grenier on 1/22/23.
 //
 
-import Alamofire
 import UIKit
 
 extension ViewControllerRegister {
@@ -22,12 +21,59 @@ extension ViewControllerRegister {
     // Dismiss the active keyboard
     view.endEditing(true)
     }
+    
+    // This collects the data that needs to be stored locally
+    func collectUserData(){
+        // Data must be read in from the main thread
+        DispatchQueue.main.async {
+            let URL_COLLECT_USER_DATA = "http://localhost:8888/CuploadServer/cupload_send_user_data_process.php?username=" + self.usernameRegister.text!;
+            var request = URLRequest(url: URL(string: URL_COLLECT_USER_DATA)!)
+            request.httpMethod = "POST"
+            //request.httpBody = try? JSONSerialization.data(withJSONObject: userInput, options: [])
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            //print(request);
+            let session = URLSession.shared
+            DispatchQueue.main.async {
+                let task = session.dataTask(with: request, completionHandler: { [self] data, response, error -> Void in
+                    do {
+                        let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
+                        print(json)
+                        // Enable pop up if user data is not validated
+                        if(json["errorCode"]) as! Int == 1{
+                            DispatchQueue.main.async{
+                                self.showErrorDialog(errorMessage: json["errorMessage"] as! String)
+                            }
+                            
+                        } else {
+                            
+                            // ID
+                            UserDefaults.standard.set(json["id"], forKey: "ID")
+                            // Username
+                            UserDefaults.standard.set(json["user_name"], forKey: "username")
+                            // Firstname
+                            //print(json["firstName"])
+                            UserDefaults.standard.set(json["first_name"], forKey: "firstName")
+                            // Lastname
+                            UserDefaults.standard.set(json["last_name"], forKey: "lastName")
+                            // Phone number
+                            UserDefaults.standard.set(json["phone_number"], forKey: "phoneNumber")
+                            // Token
+                        }
+                    } catch {
+                        print("error")
+                    }
+                })
+                task.resume()
+            }
+        }
+        
+    }
 
 }
 
 class ViewControllerRegister: UIViewController {
     
-    let URL_REGISTER = "http://192.168.0.45:8888/CuploadServer/cupload_register_process.php"
+    let URL_REGISTER = "http://localhost:8888/CuploadServer/cupload_register_process.php"
     // Connected outlets from View Controller Register on storyboard
     @IBOutlet weak var firstNameRegister: UITextField!
     @IBOutlet weak var phoneNumberRegister: UITextField!
@@ -36,6 +82,15 @@ class ViewControllerRegister: UIViewController {
     @IBOutlet weak var passwordRegister: UITextField!
     
     @IBOutlet weak var confirmPasswordRegister: UITextField!
+    
+    @IBAction func backButtonRegister(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewControllerLogin = storyboard.instantiateViewController(identifier: "ViewControllerLogin")
+        DispatchQueue.main.async{
+            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(viewControllerLogin)
+        }
+    }
+    
     func showErrorDialog(errorMessage: String) {
             //Creating UIAlertController and
             //Setting title and message for the alert dialog
@@ -56,9 +111,10 @@ class ViewControllerRegister: UIViewController {
         }
     
     @IBAction func signupButtonRegister(_ sender: UIButton) {
+        //var homePageValidity = 0;
         var errorMessage = "";
-        print(firstNameRegister.text!.count)
-        print(lastNameRegister.text!.count)
+        //print(firstNameRegister.text!.count)
+        //print(lastNameRegister.text!.count)
         if(firstNameRegister.text!.count < 2){
             errorMessage += "Invalid first name\n";
         }
@@ -83,7 +139,7 @@ class ViewControllerRegister: UIViewController {
             "&password=" + passwordRegister.text! +
             "&phoneNumber=" + phoneNumberRegister.text!
             
-            print(URL_REGISTER_PARAMETERS)
+            //print(URL_REGISTER_PARAMETERS)
             var request = URLRequest(url: URL(string: URL_REGISTER_PARAMETERS)!)
             request.httpMethod = "POST"
             //request.httpBody = try? JSONSerialization.data(withJSONObject: userInput, options: [])
@@ -97,10 +153,15 @@ class ViewControllerRegister: UIViewController {
                         let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
                         // Enable pop up
                         if(json["errorCode"]) as! Int == 1{
-                            showErrorDialog(errorMessage: json["errorMessage"] as! String)
-                        } else {
                             DispatchQueue.main.async{
-                                self.showErrorDialog(errorMessage: "User is now logged in.")
+                                self.showErrorDialog(errorMessage: json["errorMessage"] as! String)
+                            }
+                        } else {
+                            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                            collectUserData()
+                                let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabViewController")
+                            DispatchQueue.main.async{
+                                (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
                             }
                         }
                     } catch {
@@ -110,14 +171,12 @@ class ViewControllerRegister: UIViewController {
                 task.resume()
             }
         }
-        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         hideKeyBoard()
     }
-    
 
     /*
     // MARK: - Navigation
