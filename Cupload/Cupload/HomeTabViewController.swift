@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
 
 class HomeTabViewController: UIViewController {
 
@@ -21,12 +22,14 @@ class HomeTabViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        userNameLabelHome.text = UserDefaults.standard.string(forKey: "username")
-        idLabelHome.text = UserDefaults.standard.string(forKey: "ID")
-        firstNameLabelHome.text = UserDefaults.standard.string(forKey: "firstName")
-        lastNameLabelHome.text = UserDefaults.standard.string(forKey: "lastName")
-        phoneNumberLabelHome.text = UserDefaults.standard.string(forKey: "phoneNumber")
         // Do any additional setup after loading the view.
+        DispatchQueue.main.async{
+            self.userNameLabelHome.text = KeychainWrapper.standard.string(forKey: "username")
+            self.idLabelHome.text = KeychainWrapper.standard.string(forKey: "ID")
+            self.firstNameLabelHome.text = KeychainWrapper.standard.string(forKey: "firstName")
+            self.lastNameLabelHome.text = KeychainWrapper.standard.string(forKey: "lastName")
+            self.phoneNumberLabelHome.text = KeychainWrapper.standard.string(forKey: "phoneNumber")
+        }
     }
     
 

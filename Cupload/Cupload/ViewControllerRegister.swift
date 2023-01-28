@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
 
 extension ViewControllerRegister {
 
@@ -45,19 +46,19 @@ extension ViewControllerRegister {
                             }
                             
                         } else {
-                            
-                            // ID
-                            UserDefaults.standard.set(json["id"], forKey: "ID")
-                            // Username
-                            UserDefaults.standard.set(json["user_name"], forKey: "username")
-                            // Firstname
-                            //print(json["firstName"])
-                            UserDefaults.standard.set(json["first_name"], forKey: "firstName")
-                            // Lastname
-                            UserDefaults.standard.set(json["last_name"], forKey: "lastName")
-                            // Phone number
-                            UserDefaults.standard.set(json["phone_number"], forKey: "phoneNumber")
-                            // Token
+                            DispatchQueue.main.async {
+                                // ID
+                                KeychainWrapper.standard.set(json["id"] as! String, forKey: "ID")
+                                // Username
+                                KeychainWrapper.standard.set(json["user_name"] as! String, forKey: "ID")
+                                // Firstname
+                                KeychainWrapper.standard.set(json["first_name"] as! String, forKey: "firstName")
+                                // Lastname
+                                KeychainWrapper.standard.set(json["last_name"] as! String, forKey: "lastName")
+                                // Phone number
+                                KeychainWrapper.standard.set(json["phone_number"] as! String, forKey: "phoneNumber")
+                                // Token
+                            }
                         }
                     } catch {
                         print("error")

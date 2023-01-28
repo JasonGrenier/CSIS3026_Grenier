@@ -145,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="686.25954198473278" y="-333.0985915492958"/>
+            <point key="canvasLocation" x="-454" y="-333"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DPR-8k-mc6">
@@ -249,7 +249,9 @@
                             <constraint firstItem="fQ3-h5-r5Q" firstAttribute="top" secondItem="Vxs-I7-e3l" secondAttribute="bottom" constant="22" id="vOG-79-odB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="aD7-AP-pxv"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="aD7-AP-pxv">
+                        <color key="badgeColor" red="0.083277396860000005" green="0.32224932309999998" blue="0.55305808779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="3Z5-MM-4bk"/>
                     <connections>
                         <outlet property="firstNameLabelHome" destination="fQ3-h5-r5Q" id="KpE-J6-e2e"/>
@@ -261,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rb6-V5-mRe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1100" y="485.91549295774649"/>
+            <point key="canvasLocation" x="1045" y="486"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="rk3-Ew-7d5">
@@ -286,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MCg-kA-wVT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2126" y="486"/>
+            <point key="canvasLocation" x="2027" y="486"/>
         </scene>
         <!--Settings-->
         <scene sceneID="eM4-6j-zX4">
@@ -336,7 +338,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nnZ-kz-TZg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3052.6717557251909" y="-333.0985915492958"/>
+            <point key="canvasLocation" x="3073" y="-333"/>
         </scene>
         <!--View Controller Register-->
         <scene sceneID="iwB-lY-mkc">
@@ -485,7 +487,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPF-Bq-dpL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="9mx-hc-eWQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-240" y="486"/>
+            <point key="canvasLocation" x="-1444" y="486"/>
         </scene>
         <!--Main Naviagtion Controller-->
         <scene sceneID="ZU5-vn-his">
@@ -503,7 +505,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YdY-yS-Y9C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-240.45801526717557" y="-333.0985915492958"/>
+            <point key="canvasLocation" x="-1444" y="-333"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.15610110760000001" green="0.31516665220000001" blue="0.53728038069999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

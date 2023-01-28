@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
 
 extension ViewControllerLogin {
 
@@ -22,6 +23,7 @@ extension ViewControllerLogin {
     view.endEditing(true)
     }
     // This collects the data that needs to be stored locally, and is passed to the Main Tab View Controller
+    // MARK: Work on response catching here
     func collectUserData(){
         // Data must be read in from the main thread
         DispatchQueue.main.async {
@@ -44,19 +46,19 @@ extension ViewControllerLogin {
                             }
                             
                         } else {
-                            
-                            // ID
-                            UserDefaults.standard.set(json["id"], forKey: "ID")
-                            // Username
-                            UserDefaults.standard.set(json["user_name"], forKey: "username")
-                            // Firstname
-                            //print(json["firstName"])
-                            UserDefaults.standard.set(json["first_name"], forKey: "firstName")
-                            // Lastname
-                            UserDefaults.standard.set(json["last_name"], forKey: "lastName")
-                            // Phone number
-                            UserDefaults.standard.set(json["phone_number"], forKey: "phoneNumber")
-                            // Token
+                            DispatchQueue.main.async {
+                                // ID
+                                KeychainWrapper.standard.set(json["id"] as! String, forKey: "ID")
+                                // Username
+                                KeychainWrapper.standard.set(json["user_name"] as! String, forKey: "ID")
+                                // Firstname
+                                KeychainWrapper.standard.set(json["first_name"] as! String, forKey: "firstName")
+                                // Lastname
+                                KeychainWrapper.standard.set(json["last_name"] as! String, forKey: "lastName")
+                                // Phone number
+                                KeychainWrapper.standard.set(json["phone_number"] as! String, forKey: "phoneNumber")
+                                // Token
+                            }
                         }
                     } catch {
                         print("error")
@@ -76,23 +78,23 @@ class ViewControllerLogin: UIViewController {
     let URL_LOGIN = "http://localhost:8888/CuploadServer/cupload_login_process.php"
     
     func showErrorDialog(errorMessage: String) {
-            //Creating UIAlertController and
-            //Setting title and message for the alert dialog
+        //Creating UIAlertController and
+        //Setting title and message for the alert dialog
         let errorAlertController = UIAlertController(title: "Alert", message: errorMessage, preferredStyle: .alert)
-            
-            // Cancel button to release the alert controller from the screen
-            let releaseAction = UIAlertAction(title: "OK", style: .cancel){
-                (_) in
-            }
-            
-            errorAlertController.addAction(releaseAction)
-            
-            // Presenting the dialog box within the main thread
-            DispatchQueue.main.async {
-                self.present(errorAlertController, animated: true, completion: nil)
-            }
-            
+        
+        // Cancel button to release the alert controller from the screen
+        let releaseAction = UIAlertAction(title: "OK", style: .cancel){
+            (_) in
         }
+        
+        errorAlertController.addAction(releaseAction)
+        
+        // Presenting the dialog box within the main thread
+        DispatchQueue.main.async {
+            self.present(errorAlertController, animated: true, completion: nil)
+        }
+        
+    }
     
     
     @IBOutlet weak var usernameInputBase: UITextField!
@@ -122,7 +124,7 @@ class ViewControllerLogin: UIViewController {
             request.httpMethod = "POST"
             //request.httpBody = try? JSONSerialization.data(withJSONObject: userInput, options: [])
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-                print(request);
+            print(request);
             let session = URLSession.shared
             DispatchQueue.main.async {
                 let task = session.dataTask(with: request, completionHandler: { [self] data, response, error -> Void in
@@ -152,7 +154,7 @@ class ViewControllerLogin: UIViewController {
                 })
                 task.resume()
             }
-        
+            
         }
     }
     
@@ -160,7 +162,7 @@ class ViewControllerLogin: UIViewController {
         // Changes view to RegisterScreen via Storyboard
         print("Signup button was pressed")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewControllerRegister = storyboard.instantiateViewController(identifier: "ViewControllerRegister")
+        let viewControllerRegister = storyboard.instantiateViewController(identifier: "ViewControllerRegister")
         DispatchQueue.main.async{
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(viewControllerRegister)
         }
@@ -171,6 +173,17 @@ class ViewControllerLogin: UIViewController {
         // Do any additional setup after loading the view.
         print("View loaded")
         hideKeyBoard()
+        /* if(KeychainWrapper.standard.string(forKey: "username") == ""){
+         print("User is logged out")
+         
+         } else {
+         print("User is logged in")
+         DispatchQueue.main.async{
+         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+         let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabViewController")
+         (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
+         }
+         }
+         */
     }
-
 }

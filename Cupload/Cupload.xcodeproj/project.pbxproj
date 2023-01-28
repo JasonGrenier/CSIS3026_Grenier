@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ACB820EAEA9C2B43A714356 /* Pods_CuploadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579B900F39A23D1589730BFF /* Pods_CuploadTests.framework */; };
+		31C92521E9334B40E36C2727 /* Pods_Cupload_CuploadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBEEFD1EA8C52732AC05AE /* Pods_Cupload_CuploadUITests.framework */; };
+		3F6FDFE9CE91C380406BCF5E /* Pods_Cupload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088C06E56C96397B69DFDE4A /* Pods_Cupload.framework */; };
 		C607C67A298086F300A4CACD /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C607C679298086F300A4CACD /* HomeTabViewController.swift */; };
-		C63C9037297C87AB004275BC /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = C63C9036297C87AB004275BC /* Algorithms */; };
-		C63C903A297C8895004275BC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C63C9039297C8895004275BC /* Alamofire */; };
 		C6A1E948297D133800084111 /* ViewControllerRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E947297D133800084111 /* ViewControllerRegister.swift */; };
 		C6B19A3029799B9400195FCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A2F29799B9400195FCA /* AppDelegate.swift */; };
 		C6B19A3229799B9400195FCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A3129799B9400195FCA /* SceneDelegate.swift */; };
@@ -40,7 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		088C06E56C96397B69DFDE4A /* Pods_Cupload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cupload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD43618A7530C47AECFFFDF /* Pods-Cupload-CuploadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cupload-CuploadUITests.debug.xcconfig"; path = "Target Support Files/Pods-Cupload-CuploadUITests/Pods-Cupload-CuploadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		32156AEB424A87023DA2A82C /* Pods-Cupload-CuploadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cupload-CuploadUITests.release.xcconfig"; path = "Target Support Files/Pods-Cupload-CuploadUITests/Pods-Cupload-CuploadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		579B900F39A23D1589730BFF /* Pods_CuploadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuploadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AD6402B4DF2D8B85F81341F /* Pods-Cupload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cupload.release.xcconfig"; path = "Target Support Files/Pods-Cupload/Pods-Cupload.release.xcconfig"; sourceTree = "<group>"; };
+		601865A0FCDDA9220796ADBC /* Pods-CuploadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuploadTests.debug.xcconfig"; path = "Target Support Files/Pods-CuploadTests/Pods-CuploadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C8B93CB9F59EA76C8A21BEB /* Pods-Cupload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cupload.debug.xcconfig"; path = "Target Support Files/Pods-Cupload/Pods-Cupload.debug.xcconfig"; sourceTree = "<group>"; };
+		ADE42C79FF4AB4A7A9766591 /* Pods-CuploadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuploadTests.release.xcconfig"; path = "Target Support Files/Pods-CuploadTests/Pods-CuploadTests.release.xcconfig"; sourceTree = "<group>"; };
 		C607C679298086F300A4CACD /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		C64D9A5E29819D7A001D4DC8 /* Cupload.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cupload.entitlements; sourceTree = SOURCE_ROOT; };
 		C6A1E947297D133800084111 /* ViewControllerRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRegister.swift; sourceTree = "<group>"; };
 		C6B19A2C29799B9400195FCA /* Cupload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cupload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B19A2F29799B9400195FCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +65,7 @@
 		C6B19A4C29799B9600195FCA /* CuploadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuploadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B19A5029799B9600195FCA /* CuploadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuploadUITests.swift; sourceTree = "<group>"; };
 		C6B19A5229799B9600195FCA /* CuploadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuploadUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3FBEEFD1EA8C52732AC05AE /* Pods_Cupload_CuploadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cupload_CuploadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C63C9037297C87AB004275BC /* Algorithms in Frameworks */,
-				C63C903A297C8895004275BC /* Alamofire in Frameworks */,
+				3F6FDFE9CE91C380406BCF5E /* Pods_Cupload.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ACB820EAEA9C2B43A714356 /* Pods_CuploadTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +89,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C92521E9334B40E36C2727 /* Pods_Cupload_CuploadUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00BEA4B2E93B93E679C0AAC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				088C06E56C96397B69DFDE4A /* Pods_Cupload.framework */,
+				F3FBEEFD1EA8C52732AC05AE /* Pods_Cupload_CuploadUITests.framework */,
+				579B900F39A23D1589730BFF /* Pods_CuploadTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		025C825BA7FD7A052542F5BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C8B93CB9F59EA76C8A21BEB /* Pods-Cupload.debug.xcconfig */,
+				5AD6402B4DF2D8B85F81341F /* Pods-Cupload.release.xcconfig */,
+				2FD43618A7530C47AECFFFDF /* Pods-Cupload-CuploadUITests.debug.xcconfig */,
+				32156AEB424A87023DA2A82C /* Pods-Cupload-CuploadUITests.release.xcconfig */,
+				601865A0FCDDA9220796ADBC /* Pods-CuploadTests.debug.xcconfig */,
+				ADE42C79FF4AB4A7A9766591 /* Pods-CuploadTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C681E03F297F41C200D35DBD /* Imgs */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +135,8 @@
 				C6B19A4529799B9600195FCA /* CuploadTests */,
 				C6B19A4F29799B9600195FCA /* CuploadUITests */,
 				C6B19A2D29799B9400195FCA /* Products */,
+				025C825BA7FD7A052542F5BD /* Pods */,
+				00BEA4B2E93B93E679C0AAC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,12 +153,13 @@
 		C6B19A2E29799B9400195FCA /* Cupload */ = {
 			isa = PBXGroup;
 			children = (
+				C64D9A5E29819D7A001D4DC8 /* Cupload.entitlements */,
 				C6B19A2F29799B9400195FCA /* AppDelegate.swift */,
 				C6B19A3129799B9400195FCA /* SceneDelegate.swift */,
 				C6B19A3329799B9400195FCA /* ViewControllerLogin.swift */,
 				C6B19A3529799B9400195FCA /* Main.storyboard */,
-				C6B19A3A29799B9600195FCA /* LaunchScreen.storyboard */,
 				C6B19A3829799B9600195FCA /* Assets.xcassets */,
+				C6B19A3A29799B9600195FCA /* LaunchScreen.storyboard */,
 				C6B19A3D29799B9600195FCA /* Info.plist */,
 				C6A1E947297D133800084111 /* ViewControllerRegister.swift */,
 				C607C679298086F300A4CACD /* HomeTabViewController.swift */,
@@ -152,19 +191,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6B19A5629799B9700195FCA /* Build configuration list for PBXNativeTarget "Cupload" */;
 			buildPhases = (
+				8871751E77D7E696DEF9DCDA /* [CP] Check Pods Manifest.lock */,
 				C6B19A2829799B9400195FCA /* Sources */,
 				C6B19A2929799B9400195FCA /* Frameworks */,
 				C6B19A2A29799B9400195FCA /* Resources */,
+				BEEB4193CAA916EE7ED4377B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Cupload;
-			packageProductDependencies = (
-				C63C9036297C87AB004275BC /* Algorithms */,
-				C63C9039297C8895004275BC /* Alamofire */,
-			);
 			productName = Cupload;
 			productReference = C6B19A2C29799B9400195FCA /* Cupload.app */;
 			productType = "com.apple.product-type.application";
@@ -173,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6B19A5929799B9700195FCA /* Build configuration list for PBXNativeTarget "CuploadTests" */;
 			buildPhases = (
+				65BC519B9FE7B9F2B7B2BA60 /* [CP] Check Pods Manifest.lock */,
 				C6B19A3E29799B9600195FCA /* Sources */,
 				C6B19A3F29799B9600195FCA /* Frameworks */,
 				C6B19A4029799B9600195FCA /* Resources */,
@@ -191,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6B19A5C29799B9700195FCA /* Build configuration list for PBXNativeTarget "CuploadUITests" */;
 			buildPhases = (
+				E514C20187FA9ADD30F13A9C /* [CP] Check Pods Manifest.lock */,
 				C6B19A4829799B9600195FCA /* Sources */,
 				C6B19A4929799B9600195FCA /* Frameworks */,
 				C6B19A4A29799B9600195FCA /* Resources */,
+				6D840BA7C43D6DE90EC2F012 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,10 +277,6 @@
 				Base,
 			);
 			mainGroup = C6B19A2329799B9400195FCA;
-			packageReferences = (
-				C63C9035297C87AB004275BC /* XCRemoteSwiftPackageReference "swift-algorithms" */,
-				C63C9038297C8895004275BC /* XCRemoteSwiftPackageReference "Alamofire" */,
-			);
 			productRefGroup = C6B19A2D29799B9400195FCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -278,6 +314,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65BC519B9FE7B9F2B7B2BA60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CuploadTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D840BA7C43D6DE90EC2F012 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cupload-CuploadUITests/Pods-Cupload-CuploadUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cupload-CuploadUITests/Pods-Cupload-CuploadUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cupload-CuploadUITests/Pods-Cupload-CuploadUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8871751E77D7E696DEF9DCDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cupload-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEEB4193CAA916EE7ED4377B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cupload/Pods-Cupload-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cupload/Pods-Cupload-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cupload/Pods-Cupload-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E514C20187FA9ADD30F13A9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cupload-CuploadUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6B19A2829799B9400195FCA /* Sources */ = {
@@ -460,9 +599,11 @@
 		};
 		C6B19A5729799B9700195FCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C8B93CB9F59EA76C8A21BEB /* Pods-Cupload.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Cupload/Cupload.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HEHXP7NG6P;
@@ -484,15 +625,17 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C6B19A5829799B9700195FCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AD6402B4DF2D8B85F81341F /* Pods-Cupload.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Cupload/Cupload.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HEHXP7NG6P;
@@ -514,12 +657,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		C6B19A5A29799B9700195FCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 601865A0FCDDA9220796ADBC /* Pods-CuploadTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -539,6 +683,7 @@
 		};
 		C6B19A5B29799B9700195FCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE42C79FF4AB4A7A9766591 /* Pods-CuploadTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -558,6 +703,7 @@
 		};
 		C6B19A5D29799B9700195FCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD43618A7530C47AECFFFDF /* Pods-Cupload-CuploadUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -575,6 +721,7 @@
 		};
 		C6B19A5E29799B9700195FCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32156AEB424A87023DA2A82C /* Pods-Cupload-CuploadUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -630,38 +777,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C63C9035297C87AB004275BC /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-algorithms.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-		C63C9038297C8895004275BC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C63C9036297C87AB004275BC /* Algorithms */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C63C9035297C87AB004275BC /* XCRemoteSwiftPackageReference "swift-algorithms" */;
-			productName = Algorithms;
-		};
-		C63C9039297C8895004275BC /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C63C9038297C8895004275BC /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C6B19A2429799B9400195FCA /* Project object */;
 }
