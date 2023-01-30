@@ -293,7 +293,7 @@
         <!--Settings-->
         <scene sceneID="eM4-6j-zX4">
             <objects>
-                <viewController id="vtW-HC-ORz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllerSettings" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vtW-HC-ORz" customClass="ViewControllerSettings" customModule="Cupload" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RY0-7E-cLi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -305,6 +305,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="logoutButtonSettings" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4O-wV-Cau">
+                                <rect key="frame" x="149" y="537" width="107" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Logout">
+                                            <attributes>
+                                                <color key="NSColor" red="0.083277396860000005" green="0.32224932309999998" blue="0.55305808779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="24" name="Rockwell-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logoutButton:" destination="Se5-Mj-ozT" eventType="touchUpInside" id="7wW-av-hq7"/>
+                                    <action selector="logoutButtonSettings:" destination="Se5-Mj-ozT" eventType="touchUpInside" id="LA3-rk-5pb"/>
+                                    <action selector="logoutButtonSettings:" destination="vtW-HC-ORz" eventType="touchUpInside" id="oWk-sd-okH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4PZ-eJ-f6u"/>
                         <color key="backgroundColor" red="1" green="0.94562038749999999" blue="0.90973347410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -312,6 +333,7 @@
                     <tabBarItem key="tabBarItem" title="Settings" id="WWU-rH-40F"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dC-SN-7VJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Se5-Mj-ozT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3074" y="486"/>
         </scene>

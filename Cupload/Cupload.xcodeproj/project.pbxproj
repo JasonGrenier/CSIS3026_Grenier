@@ -21,6 +21,7 @@
 		C6B19A4729799B9600195FCA /* CuploadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A4629799B9600195FCA /* CuploadTests.swift */; };
 		C6B19A5129799B9600195FCA /* CuploadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A5029799B9600195FCA /* CuploadUITests.swift */; };
 		C6B19A5329799B9600195FCA /* CuploadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A5229799B9600195FCA /* CuploadUITestsLaunchTests.swift */; };
+		C6C8E5472987417E00122212 /* ViewControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C8E5462987417E00122212 /* ViewControllerSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		C6B19A4C29799B9600195FCA /* CuploadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuploadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B19A5029799B9600195FCA /* CuploadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuploadUITests.swift; sourceTree = "<group>"; };
 		C6B19A5229799B9600195FCA /* CuploadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuploadUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C6C8E5462987417E00122212 /* ViewControllerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSettings.swift; sourceTree = "<group>"; };
 		F3FBEEFD1EA8C52732AC05AE /* Pods_Cupload_CuploadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cupload_CuploadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,7 +118,6 @@
 				601865A0FCDDA9220796ADBC /* Pods-CuploadTests.debug.xcconfig */,
 				ADE42C79FF4AB4A7A9766591 /* Pods-CuploadTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -163,6 +164,7 @@
 				C6B19A3D29799B9600195FCA /* Info.plist */,
 				C6A1E947297D133800084111 /* ViewControllerRegister.swift */,
 				C607C679298086F300A4CACD /* HomeTabViewController.swift */,
+				C6C8E5462987417E00122212 /* ViewControllerSettings.swift */,
 			);
 			path = Cupload;
 			sourceTree = "<group>";
@@ -428,6 +430,7 @@
 				C6B19A3029799B9400195FCA /* AppDelegate.swift in Sources */,
 				C6B19A3229799B9400195FCA /* SceneDelegate.swift in Sources */,
 				C607C67A298086F300A4CACD /* HomeTabViewController.swift in Sources */,
+				C6C8E5472987417E00122212 /* ViewControllerSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

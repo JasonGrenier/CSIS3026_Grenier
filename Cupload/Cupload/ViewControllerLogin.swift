@@ -173,17 +173,16 @@ class ViewControllerLogin: UIViewController {
         // Do any additional setup after loading the view.
         print("View loaded")
         hideKeyBoard()
-        /* if(KeychainWrapper.standard.string(forKey: "username") == ""){
-         print("User is logged out")
-         
+        if(KeychainWrapper.standard.string(forKey: "username") == nil){
+            print("User is logged out")
          } else {
-         print("User is logged in")
-         DispatchQueue.main.async{
-         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-         let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabViewController")
-         (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
+             print(KeychainWrapper.standard.string(forKey: "username") as Any)
+             print("User is logged in")
+             DispatchQueue.main.async{
+                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                 let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabViewController")
+                 (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
+             }
          }
-         }
-         */
     }
 }

@@ -50,7 +50,7 @@ extension ViewControllerRegister {
                                 // ID
                                 KeychainWrapper.standard.set(json["id"] as! String, forKey: "ID")
                                 // Username
-                                KeychainWrapper.standard.set(json["user_name"] as! String, forKey: "ID")
+                                KeychainWrapper.standard.set(json["user_name"] as! String, forKey: "username")
                                 // Firstname
                                 KeychainWrapper.standard.set(json["first_name"] as! String, forKey: "firstName")
                                 // Lastname
