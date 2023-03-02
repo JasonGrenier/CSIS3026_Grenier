@@ -160,7 +160,7 @@ class ViewControllerRegister: UIViewController {
                         } else {
                             let storyboard = UIStoryboard(name: "Main", bundle: nil)
                             collectUserData()
-                                let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabViewController")
+                            let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabViewController")
                             DispatchQueue.main.async{
                                 (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
                             }

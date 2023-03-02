@@ -24,51 +24,6 @@ extension ViewControllerLogin {
     }
     // This collects the data that needs to be stored locally, and is passed to the Main Tab View Controller
     // MARK: Work on response catching here
-    func collectUserData(){
-        // Data must be read in from the main thread
-        DispatchQueue.main.async {
-            let URL_COLLECT_USER_DATA = "http://localhost:8888/CuploadServer/cupload_send_user_data_process.php?username=" + self.usernameInputBase.text!;
-            var request = URLRequest(url: URL(string: URL_COLLECT_USER_DATA)!)
-            request.httpMethod = "POST"
-            //request.httpBody = try? JSONSerialization.data(withJSONObject: userInput, options: [])
-            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-            //print(request);
-            let session = URLSession.shared
-            DispatchQueue.main.async {
-                let task = session.dataTask(with: request, completionHandler: { [self] data, response, error -> Void in
-                    do {
-                        let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
-                        print(json)
-                        // Enable pop up if user data is not validated
-                        if(json["errorCode"]) as! Int == 1{
-                            DispatchQueue.main.async{
-                                self.showErrorDialog(errorMessage: json["errorMessage"] as! String)
-                            }
-                            
-                        } else {
-                            DispatchQueue.main.async {
-                                // ID
-                                KeychainWrapper.standard.set(json["id"] as! String, forKey: "ID")
-                                // Username
-                                KeychainWrapper.standard.set(json["user_name"] as! String, forKey: "ID")
-                                // Firstname
-                                KeychainWrapper.standard.set(json["first_name"] as! String, forKey: "firstName")
-                                // Lastname
-                                KeychainWrapper.standard.set(json["last_name"] as! String, forKey: "lastName")
-                                // Phone number
-                                KeychainWrapper.standard.set(json["phone_number"] as! String, forKey: "phoneNumber")
-                                // Token
-                            }
-                        }
-                    } catch {
-                        print("error")
-                    }
-                })
-                task.resume()
-            }
-        }
-        
-    }
 
 }
 
@@ -118,7 +73,7 @@ class ViewControllerLogin: UIViewController {
             // Server side validation
         } else {
             let URL_LOGIN_PARAMETERS = URL_LOGIN + "?username=" +
-            usernameInputBase.text! + "&password=" +
+            (usernameInputBase.text!) + "&password=" +
             passwordInputBase.text!;
             var request = URLRequest(url: URL(string: URL_LOGIN_PARAMETERS)!)
             request.httpMethod = "POST"
@@ -138,7 +93,18 @@ class ViewControllerLogin: UIViewController {
                             
                         } else {
                             // Establish user information
-                            collectUserData()
+                            // ID
+                            KeychainWrapper.standard.set(json["id"] as! String, forKey: "ID")
+                            // Username
+                            KeychainWrapper.standard.set(json["user_name"] as! String, forKey: "ID")
+                            // Firstname
+                            KeychainWrapper.standard.set(json["first_name"] as! String, forKey: "firstName")
+                            // Lastname
+                            KeychainWrapper.standard.set(json["last_name"] as! String, forKey: "lastName")
+                            // Phone number
+                            KeychainWrapper.standard.set(json["phone_number"] as! String, forKey: "phoneNumber")
+                            // Token
+                            KeychainWrapper.standard.set(json["token"] as! String, forKey: "token")
                             // Show Home Tab View Controller
                             let storyboard = UIStoryboard(name: "Main", bundle: nil)
                             DispatchQueue.main.async{
@@ -169,11 +135,12 @@ class ViewControllerLogin: UIViewController {
     }
     
     override func viewDidLoad() {
+        let username = KeychainWrapper.standard.string(forKey: "username")
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print("View loaded")
         hideKeyBoard()
-        if(KeychainWrapper.standard.string(forKey: "username") == nil){
+        if(username == "" || username == nil){
             print("User is logged out")
          } else {
              print(KeychainWrapper.standard.string(forKey: "username") as Any)

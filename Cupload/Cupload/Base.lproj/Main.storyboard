@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7KV-Cq-rrN">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YZt-d6-Z67">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,17 +13,17 @@
             <objects>
                 <viewController restorationIdentifier="ViewControllerLogin" storyboardIdentifier="ViewControllerLogin" title="View Controller Login" id="BYZ-38-t0r" customClass="ViewControllerLogin" customModule="Cupload" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="ViewControllerLogin" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="cuploadTitleRegister" text="Cupload" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAR-oh-r9m">
-                                <rect key="frame" x="140" y="246.33333333333337" width="235" height="64"/>
+                                <rect key="frame" x="140" y="235.5" width="256" height="64"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="54"/>
                                 <color key="textColor" red="0.15610110760000001" green="0.31516665220000001" blue="0.53728038069999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="cuploadLogoRegister" image="wineglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="K92-dv-jH6">
-                                <rect key="frame" x="14" y="232.33333333333337" width="75" height="98"/>
+                                <rect key="frame" x="14" y="221" width="75" height="98.5"/>
                                 <color key="tintColor" red="0.15610110760000001" green="0.31516665220000001" blue="0.53728038069999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <accessibility key="accessibilityConfiguration" hint="Cupload Logo" identifier="Cupload Logo" label="Cupload Logo">
                                     <bool key="isElement" value="YES"/>
@@ -33,7 +33,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="cuploadBioBase" text="Welcome to the party" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rll-HY-t4v">
-                                <rect key="frame" x="115" y="305.33333333333331" width="260" height="25"/>
+                                <rect key="frame" x="115" y="294.5" width="281" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="62e-yI-8vo"/>
                                 </constraints>
@@ -62,28 +62,8 @@
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="loginButtonBase" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DoV-WK-erD">
-                                <rect key="frame" x="147" y="499" width="201" height="51"/>
-                                <color key="backgroundColor" red="0.083277396860000005" green="0.32224932309999998" blue="0.55305808779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Login">
-                                            <attributes>
-                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="20" name="Rockwell-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="loginButtonBase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hct-hc-BOp"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="signupButtonBase" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1V-Ag-Y2e">
-                                <rect key="frame" x="43" y="499" width="101" height="51"/>
+                                <rect key="frame" x="43" y="488" width="101" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="EnA-1l-mRu"/>
                                     <constraint firstAttribute="width" constant="101" id="eUA-lT-Tyq"/>
@@ -103,6 +83,26 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="signupButtonBase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Lu-dT-at1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="loginButtonBase" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DoV-WK-erD">
+                                <rect key="frame" x="147" y="488" width="201" height="51"/>
+                                <color key="backgroundColor" red="0.083277396860000005" green="0.32224932309999998" blue="0.55305808779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Login">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="20" name="Rockwell-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonBase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hct-hc-BOp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -157,9 +157,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="YZt-d6-Z67" kind="relationship" relationship="viewControllers" id="gOn-1D-sIZ"/>
                         <segue destination="PUc-QT-IIn" kind="relationship" relationship="viewControllers" id="tr5-4u-jYU"/>
                         <segue destination="EPI-OK-lEi" kind="relationship" relationship="viewControllers" id="FuM-Ih-fgL"/>
-                        <segue destination="YZt-d6-Z67" kind="relationship" relationship="viewControllers" id="gOn-1D-sIZ"/>
                         <segue destination="vtW-HC-ORz" kind="relationship" relationship="viewControllers" id="wIv-Ko-dYa"/>
                     </connections>
                 </tabBarController>
@@ -172,10 +172,10 @@
             <objects>
                 <viewController storyboardIdentifier="HomeTabViewController" title="Home Tab View" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PUc-QT-IIn" customClass="HomeTabViewController" customModule="Cupload" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aD9-6A-TDI">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DY1-jM-gmO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="title" text="HOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DY1-jM-gmO">
                                 <rect key="frame" x="136" y="401" width="120" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <nil key="textColor"/>
@@ -270,7 +270,7 @@
             <objects>
                 <viewController id="EPI-OK-lEi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QM1-qz-WiA">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONTACTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwH-59-i6D">
@@ -295,7 +295,7 @@
             <objects>
                 <viewController storyboardIdentifier="ViewControllerSettings" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vtW-HC-ORz" customClass="ViewControllerSettings" customModule="Cupload" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RY0-7E-cLi">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SETTINGS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0n-jP-KN2">
@@ -340,34 +340,114 @@
         <!--Blow-->
         <scene sceneID="fEx-GF-bW1">
             <objects>
-                <viewController id="YZt-d6-Z67" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllerBlowTab" id="YZt-d6-Z67" customClass="ViewControllerBlowTab" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WTv-0r-w1e">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BLOW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTe-iu-hWJ">
-                                <rect key="frame" x="136" y="401" width="117" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="cuploadTitleRegister" text="Cupload" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpP-BV-cdl">
+                                <rect key="frame" x="79" y="147" width="256" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="SQt-f9-h49"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="54"/>
+                                <color key="textColor" red="0.15610110760000001" green="0.31516665220000001" blue="0.53728038069999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="V5T-au-hTG">
+                                <rect key="frame" x="67" y="719" width="280" height="173"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" restorationIdentifier="connect" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="HD3-68-021">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="75.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Connect">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="Rockwell-Regular"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="connect:" destination="8CB-iI-EOr" eventType="touchUpInside" id="FCA-i1-Ge4"/>
+                                            <action selector="connectTapped:" destination="8CB-iI-EOr" eventType="touchUpInside" id="8vt-YJ-1ms"/>
+                                            <action selector="connectTapped:" destination="YZt-d6-Z67" eventType="touchUpInside" id="CbQ-6C-ZuH"/>
+                                            <action selector="mConnectTapped:" destination="8CB-iI-EOr" eventType="touchUpInside" id="iVP-9L-vNz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFill" restorationIdentifier="test" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnZ-FG-4Jw">
+                                        <rect key="frame" x="0.0" y="97.5" width="280" height="75.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Test BAC">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="Rockwell-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="testTapped:" destination="YZt-d6-Z67" eventType="touchUpInside" id="hlr-NJ-VCk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="yar-9L-hoi">
+                                <rect key="frame" x="0.0" y="211" width="414" height="474"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="reading" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAT-7S-d5K">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="239.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="results" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypy-OQ-QIg">
+                                        <rect key="frame" x="0.0" y="234.5" width="414" height="239.5"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mac-MU-lgo"/>
                         <color key="backgroundColor" red="1" green="0.94562038749999999" blue="0.90973347410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="yar-9L-hoi" firstAttribute="centerY" secondItem="WTv-0r-w1e" secondAttribute="centerY" id="0TX-75-lSx"/>
+                            <constraint firstItem="EpP-BV-cdl" firstAttribute="leading" secondItem="mac-MU-lgo" secondAttribute="leading" constant="79" id="4oL-ke-f5f"/>
+                            <constraint firstItem="yar-9L-hoi" firstAttribute="top" secondItem="EpP-BV-cdl" secondAttribute="bottom" id="4uV-dw-Wm7"/>
+                            <constraint firstItem="yar-9L-hoi" firstAttribute="leading" secondItem="mac-MU-lgo" secondAttribute="leading" id="AYP-0t-2Mk"/>
+                            <constraint firstItem="yar-9L-hoi" firstAttribute="centerX" secondItem="V5T-au-hTG" secondAttribute="centerX" id="Uwn-if-iQf"/>
+                            <constraint firstItem="EpP-BV-cdl" firstAttribute="centerX" secondItem="yar-9L-hoi" secondAttribute="centerX" id="cry-FK-8eP"/>
+                            <constraint firstItem="V5T-au-hTG" firstAttribute="top" secondItem="yar-9L-hoi" secondAttribute="bottom" constant="34" id="da0-Az-Rsk"/>
+                            <constraint firstItem="EpP-BV-cdl" firstAttribute="top" secondItem="mac-MU-lgo" secondAttribute="top" constant="99" id="irR-Hx-opt"/>
+                            <constraint firstItem="mac-MU-lgo" firstAttribute="trailing" secondItem="yar-9L-hoi" secondAttribute="trailing" id="lei-46-l8A"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Blow" id="aMo-ae-ejR"/>
+                    <connections>
+                        <outlet property="reading" destination="nAT-7S-d5K" id="LSh-9A-MLf"/>
+                        <outlet property="results" destination="ypy-OQ-QIg" id="7EJ-By-8K4"/>
+                        <outlet property="test" destination="mnZ-FG-4Jw" id="4zR-iB-SJh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nnZ-kz-TZg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="8CB-iI-EOr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3073" y="-333"/>
+            <point key="canvasLocation" x="3072.5190839694656" y="-333.0985915492958"/>
         </scene>
         <!--View Controller Register-->
         <scene sceneID="iwB-lY-mkc">
             <objects>
                 <viewController storyboardIdentifier="ViewControllerRegister" title="View Controller Register" useStoryboardIdentifierAsRestorationIdentifier="YES" id="X7U-SS-NjM" customClass="ViewControllerRegister" customModule="Cupload" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fNl-4r-G4L">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wVq-Gl-U9B">
@@ -517,7 +597,7 @@
                 <navigationController title="Main Naviagtion Controller" automaticallyAdjustsScrollViewInsets="NO" id="7KV-Cq-rrN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uwh-S9-uKD">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

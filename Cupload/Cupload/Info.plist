@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIUserInterfaceStyle</key>
+	<string>Bright</string>
+	<key></key>
+	<string></string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>This application uses bluetooth to connect to the user&apos;s C6 or C8 BACtrack device.</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

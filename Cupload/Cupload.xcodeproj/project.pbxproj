@@ -11,6 +11,8 @@
 		31C92521E9334B40E36C2727 /* Pods_Cupload_CuploadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBEEFD1EA8C52732AC05AE /* Pods_Cupload_CuploadUITests.framework */; };
 		3F6FDFE9CE91C380406BCF5E /* Pods_Cupload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088C06E56C96397B69DFDE4A /* Pods_Cupload.framework */; };
 		C607C67A298086F300A4CACD /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C607C679298086F300A4CACD /* HomeTabViewController.swift */; };
+		C644FBFF29AD47B100F636D3 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = C644FBFE29AD47B100F636D3 /* SwiftKeychainWrapper */; };
+		C66A1AD629AD5003000D8088 /* libBACtrackSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C66A1AD529AD5003000D8088 /* libBACtrackSDK.a */; };
 		C6A1E948297D133800084111 /* ViewControllerRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E947297D133800084111 /* ViewControllerRegister.swift */; };
 		C6B19A3029799B9400195FCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A2F29799B9400195FCA /* AppDelegate.swift */; };
 		C6B19A3229799B9400195FCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A3129799B9400195FCA /* SceneDelegate.swift */; };
@@ -21,6 +23,7 @@
 		C6B19A4729799B9600195FCA /* CuploadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A4629799B9600195FCA /* CuploadTests.swift */; };
 		C6B19A5129799B9600195FCA /* CuploadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A5029799B9600195FCA /* CuploadUITests.swift */; };
 		C6B19A5329799B9600195FCA /* CuploadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B19A5229799B9600195FCA /* CuploadUITestsLaunchTests.swift */; };
+		C6C59B0929AD5F46008632A7 /* ViewControllerBlowTab.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C59B0829AD5F46008632A7 /* ViewControllerBlowTab.m */; };
 		C6C8E5472987417E00122212 /* ViewControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C8E5462987417E00122212 /* ViewControllerSettings.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +54,11 @@
 		8C8B93CB9F59EA76C8A21BEB /* Pods-Cupload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cupload.debug.xcconfig"; path = "Target Support Files/Pods-Cupload/Pods-Cupload.debug.xcconfig"; sourceTree = "<group>"; };
 		ADE42C79FF4AB4A7A9766591 /* Pods-CuploadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuploadTests.release.xcconfig"; path = "Target Support Files/Pods-CuploadTests/Pods-CuploadTests.release.xcconfig"; sourceTree = "<group>"; };
 		C607C679298086F300A4CACD /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		C644FBF829AD464E00F636D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C644FBFA29AD464E00F636D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		C644FBFB29AD467200F636D3 /* libBACtrackSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBACtrackSDK.a; path = ../../../../Desktop/BACtrack_v2.2.8_iOS_SDK/libBACtrackSDK.a; sourceTree = "<group>"; };
 		C64D9A5E29819D7A001D4DC8 /* Cupload.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cupload.entitlements; sourceTree = SOURCE_ROOT; };
+		C66A1AD529AD5003000D8088 /* libBACtrackSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBACtrackSDK.a; path = BACtrackSDK/libBACtrackSDK.a; sourceTree = "<group>"; };
 		C6A1E947297D133800084111 /* ViewControllerRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRegister.swift; sourceTree = "<group>"; };
 		C6B19A2C29799B9400195FCA /* Cupload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cupload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B19A2F29799B9400195FCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +73,10 @@
 		C6B19A4C29799B9600195FCA /* CuploadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuploadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B19A5029799B9600195FCA /* CuploadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuploadUITests.swift; sourceTree = "<group>"; };
 		C6B19A5229799B9600195FCA /* CuploadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuploadUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C6C59B0629AD5E9C008632A7 /* ViewControllerBlowTab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerBlowTab.h; sourceTree = "<group>"; };
+		C6C59B0729AD5F45008632A7 /* Cupload-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cupload-Bridging-Header.h"; sourceTree = "<group>"; };
+		C6C59B0829AD5F46008632A7 /* ViewControllerBlowTab.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerBlowTab.m; sourceTree = "<group>"; };
+		C6C59B0A29AD5FDF008632A7 /* BACtrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BACtrack.h; sourceTree = "<group>"; };
 		C6C8E5462987417E00122212 /* ViewControllerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSettings.swift; sourceTree = "<group>"; };
 		F3FBEEFD1EA8C52732AC05AE /* Pods_Cupload_CuploadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cupload_CuploadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -75,7 +86,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C66A1AD629AD5003000D8088 /* libBACtrackSDK.a in Frameworks */,
 				3F6FDFE9CE91C380406BCF5E /* Pods_Cupload.framework in Frameworks */,
+				C644FBFF29AD47B100F636D3 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +114,9 @@
 		00BEA4B2E93B93E679C0AAC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C644FBFB29AD467200F636D3 /* libBACtrackSDK.a */,
+				C66A1AD529AD5003000D8088 /* libBACtrackSDK.a */,
+				C644FBF629AD464E00F636D3 /* Base.lproj */,
 				088C06E56C96397B69DFDE4A /* Pods_Cupload.framework */,
 				F3FBEEFD1EA8C52732AC05AE /* Pods_Cupload_CuploadUITests.framework */,
 				579B900F39A23D1589730BFF /* Pods_CuploadTests.framework */,
@@ -121,6 +137,34 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C644FBF629AD464E00F636D3 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				C644FBF729AD464E00F636D3 /* LaunchScreen.storyboard */,
+				C644FBF929AD464E00F636D3 /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = "../../BACtrack Test/BACtrack Test/Base.lproj";
+			sourceTree = "<group>";
+		};
+		C653A57E29AD4E460021255B /* BACtrackSDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BACtrackSDK;
+			sourceTree = "<group>";
+		};
+		C66975DC29AD5D1500EDF856 /* ViewControllerBlowTab */ = {
+			isa = PBXGroup;
+			children = (
+				C6C59B0629AD5E9C008632A7 /* ViewControllerBlowTab.h */,
+				C6C59B0829AD5F46008632A7 /* ViewControllerBlowTab.m */,
+				C6C59B0729AD5F45008632A7 /* Cupload-Bridging-Header.h */,
+				C6C59B0A29AD5FDF008632A7 /* BACtrack.h */,
+			);
+			path = ViewControllerBlowTab;
+			sourceTree = "<group>";
+		};
 		C681E03F297F41C200D35DBD /* Imgs */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +175,8 @@
 		C6B19A2329799B9400195FCA = {
 			isa = PBXGroup;
 			children = (
+				C66975DC29AD5D1500EDF856 /* ViewControllerBlowTab */,
+				C653A57E29AD4E460021255B /* BACtrackSDK */,
 				C681E03F297F41C200D35DBD /* Imgs */,
 				C6B19A2E29799B9400195FCA /* Cupload */,
 				C6B19A4529799B9600195FCA /* CuploadTests */,
@@ -204,6 +250,9 @@
 			dependencies = (
 			);
 			name = Cupload;
+			packageProductDependencies = (
+				C644FBFE29AD47B100F636D3 /* SwiftKeychainWrapper */,
+			);
 			productName = Cupload;
 			productReference = C6B19A2C29799B9400195FCA /* Cupload.app */;
 			productType = "com.apple.product-type.application";
@@ -259,6 +308,7 @@
 				TargetAttributes = {
 					C6B19A2B29799B9400195FCA = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					C6B19A4129799B9600195FCA = {
 						CreatedOnToolsVersion = 14.2;
@@ -279,6 +329,9 @@
 				Base,
 			);
 			mainGroup = C6B19A2329799B9400195FCA;
+			packageReferences = (
+				C644FBFD29AD47B100F636D3 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = C6B19A2D29799B9400195FCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -431,6 +484,7 @@
 				C6B19A3229799B9400195FCA /* SceneDelegate.swift in Sources */,
 				C607C67A298086F300A4CACD /* HomeTabViewController.swift in Sources */,
 				C6C8E5472987417E00122212 /* ViewControllerSettings.swift in Sources */,
+				C6C59B0929AD5F46008632A7 /* ViewControllerBlowTab.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +521,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C644FBF729AD464E00F636D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C644FBF829AD464E00F636D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C644FBF929AD464E00F636D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C644FBFA29AD464E00F636D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		C6B19A3529799B9400195FCA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -606,6 +676,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Cupload/Cupload.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -623,10 +694,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BACtrackSDK",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Grenier-Software.Cupload";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ViewControllerBlowTab/Cupload-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -638,6 +715,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Cupload/Cupload.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -655,10 +733,19 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BACtrackSDK",
+				);
 				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[sdk=iphoneos*]" = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Grenier-Software.Cupload";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ViewControllerBlowTab/Cupload-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -780,6 +867,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C644FBFD29AD47B100F636D3 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C644FBFE29AD47B100F636D3 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C644FBFD29AD47B100F636D3 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C6B19A2429799B9400195FCA /* Project object */;
 }
