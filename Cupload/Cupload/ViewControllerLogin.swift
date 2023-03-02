@@ -30,7 +30,7 @@ extension ViewControllerLogin {
 
 class ViewControllerLogin: UIViewController {
     // Initialization of storyboard elements
-    let URL_LOGIN = "http://localhost:8888/CuploadServer/cupload_login_process.php"
+    let URL_LOGIN = "http://cupload.ddns.net:8888/CuploadServer/cupload_login_process.php"
     
     func showErrorDialog(errorMessage: String) {
         //Creating UIAlertController and
@@ -96,7 +96,7 @@ class ViewControllerLogin: UIViewController {
                             // ID
                             KeychainWrapper.standard.set(json["id"] as! String, forKey: "ID")
                             // Username
-                            KeychainWrapper.standard.set(json["user_name"] as! String, forKey: "ID")
+                            KeychainWrapper.standard.set(json["user_name"] as! String, forKey: "username")
                             // Firstname
                             KeychainWrapper.standard.set(json["first_name"] as! String, forKey: "firstName")
                             // Lastname

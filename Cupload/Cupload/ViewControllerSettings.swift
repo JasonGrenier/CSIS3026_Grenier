@@ -15,7 +15,7 @@ class ViewControllerSettings: UIViewController {
     @IBAction func logoutButtonSettings(_ sender: UIButton) {
         print("Logout button was pressed")
             // ID
-            KeychainWrapper.standard.set("", forKey: "ID")
+            KeychainWrapper.standard.set("", forKey: "username")
             // Username
             KeychainWrapper.standard.set("", forKey: "ID")
             // Firstname

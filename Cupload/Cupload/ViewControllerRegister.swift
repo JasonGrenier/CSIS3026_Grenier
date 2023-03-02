@@ -22,59 +22,12 @@ extension ViewControllerRegister {
     // Dismiss the active keyboard
     view.endEditing(true)
     }
-    
-    // This collects the data that needs to be stored locally
-    func collectUserData(){
-        // Data must be read in from the main thread
-        DispatchQueue.main.async {
-            let URL_COLLECT_USER_DATA = "http://localhost:8888/CuploadServer/cupload_send_user_data_process.php?username=" + self.usernameRegister.text!;
-            var request = URLRequest(url: URL(string: URL_COLLECT_USER_DATA)!)
-            request.httpMethod = "POST"
-            //request.httpBody = try? JSONSerialization.data(withJSONObject: userInput, options: [])
-            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-            //print(request);
-            let session = URLSession.shared
-            DispatchQueue.main.async {
-                let task = session.dataTask(with: request, completionHandler: { [self] data, response, error -> Void in
-                    do {
-                        let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
-                        print(json)
-                        // Enable pop up if user data is not validated
-                        if(json["errorCode"]) as! Int == 1{
-                            DispatchQueue.main.async{
-                                self.showErrorDialog(errorMessage: json["errorMessage"] as! String)
-                            }
-                            
-                        } else {
-                            DispatchQueue.main.async {
-                                // ID
-                                KeychainWrapper.standard.set(json["id"] as! String, forKey: "ID")
-                                // Username
-                                KeychainWrapper.standard.set(json["user_name"] as! String, forKey: "username")
-                                // Firstname
-                                KeychainWrapper.standard.set(json["first_name"] as! String, forKey: "firstName")
-                                // Lastname
-                                KeychainWrapper.standard.set(json["last_name"] as! String, forKey: "lastName")
-                                // Phone number
-                                KeychainWrapper.standard.set(json["phone_number"] as! String, forKey: "phoneNumber")
-                                // Token
-                            }
-                        }
-                    } catch {
-                        print("error")
-                    }
-                })
-                task.resume()
-            }
-        }
-        
-    }
 
 }
 
 class ViewControllerRegister: UIViewController {
     
-    let URL_REGISTER = "http://localhost:8888/CuploadServer/cupload_register_process.php"
+    let URL_REGISTER = "http://cupload.ddns.net:8888/CuploadServer/cupload_register_process.php"
     // Connected outlets from View Controller Register on storyboard
     @IBOutlet weak var firstNameRegister: UITextField!
     @IBOutlet weak var phoneNumberRegister: UITextField!
@@ -159,9 +112,20 @@ class ViewControllerRegister: UIViewController {
                             }
                         } else {
                             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                            collectUserData()
-                            let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabViewController")
+                            // ID
+                            KeychainWrapper.standard.set(json["id"] as! String, forKey: "ID")
+                            // Username
+                            KeychainWrapper.standard.set(json["user_name"] as! String, forKey: "username")
+                            // Firstname
+                            KeychainWrapper.standard.set(json["first_name"] as! String, forKey: "firstName")
+                            // Lastname
+                            KeychainWrapper.standard.set(json["last_name"] as! String, forKey: "lastName")
+                            // Phone number
+                            KeychainWrapper.standard.set(json["phone_number"] as! String, forKey: "phoneNumber")
+                            // Token
+                            KeychainWrapper.standard.set(json["token"] as! String, forKey: "token")
                             DispatchQueue.main.async{
+                                let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabViewController")
                                 (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
                             }
                         }
